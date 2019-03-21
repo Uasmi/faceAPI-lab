@@ -188,10 +188,9 @@ print ('Want to add your face to library?')
 while True:
     key = input('y(yes),n(no):')
     if key == 'y':
-        image = getImage()
-        print (image)
         while True:
             try:
+                image = getImage()
                 stored = storeFace(image)
                 stored = stored['persistedFaceId']
                 print ('Your Face Id:', stored)
