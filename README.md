@@ -36,10 +36,11 @@ https://code.visualstudio.com/
 
 https://marketplace.visualstudio.com/items?itemName=ms-python.python
 
+<br/>
 
-3. Скачать вижулу код
-4. Скачать питонный экстеншн
-5. Создать проект
+##### Добавляем проект в Visual Studio Code:
+
+Для этого нам нужно добавить папку. Жмем File и Add Folder to Workspace, затем выбираем папку, где вы сохранили репозиторий
 
 <br/>
 
