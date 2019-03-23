@@ -42,6 +42,7 @@ https://marketplace.visualstudio.com/items?itemName=ms-python.python
 
 Для этого нам нужно добавить папку. Жмем File и Add Folder to Workspace, затем выбираем папку, где вы сохранили репозиторий
 
+![alt text](https://recruitlab.blob.core.windows.net/recruitlabblob/add%20folder.jpg)
 <br/>
 
 ##### Настройка проекта и подготовка библиотек:
@@ -60,6 +61,8 @@ https://marketplace.visualstudio.com/items?itemName=ms-python.python
 Находим файл ```settings.json``` внутри ```.vscode``` и заменяем его на наш путь из консоли. 
 Одинарный слэш меняем везде на двойной:
 
+![alt text](https://recruitlab.blob.core.windows.net/recruitlabblob/where_python.JPG)
+
 Теперь нам нужно установить модули, необходимые для работы нашей программы. Названия этих модулей находятся в файле ```requirements.txt```
 В терминале Visual Studio Code мы запускаем:
 ```conda activate testvirtualenv```
@@ -74,6 +77,9 @@ https://marketplace.visualstudio.com/items?itemName=ms-python.python
 ```subscription_key ```
 ```blobAccountKey ```
 
+
+![alt text](https://recruitlab.blob.core.windows.net/recruitlabblob/keys%20correct.JPG)
+
 Переходим в файл key.py и изменяем поля на значения выше, **оставляя кавычки** 
 
 
@@ -83,11 +89,14 @@ https://marketplace.visualstudio.com/items?itemName=ms-python.python
 
 Вам будет предложено добавить свое лицо в библиотеку лиц. Для этого нужно нажать *y*
 
+![alt text](https://recruitlab.blob.core.windows.net/recruitlabblob/question_1.JPG)
+
+
 Далее для правильной работы приложения, необходимо добавить картинку продукта, который вы хотите купить. Находим его в google, жмем copy link location и вставляем в терминал. 
 **Убедитесь, что ссылка заканчивается на .jpg или другое разрешение изображений**
 Если вы не хотите решать мы подготовили для вас ссылку:
 
-При удачном добавлении лица, вы увидите примерно такое:
+При удачном добавлении лица, вы увидите ID вашего лица.
 
 
 
