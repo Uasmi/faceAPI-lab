@@ -51,10 +51,15 @@ https://marketplace.visualstudio.com/items?itemName=ms-python.python
 
 ```conda activate testvirtualenv```
 
+![alt text](https://recruitlab.blob.core.windows.net/recruitlabblob/activateenv.jpg)
+
 Далее, нам нужно найти путь к testvirtualenv. Таким образом, мы укажем visual studio code, в какой именно среде ему стоит работать.
 Запускаем в консоли Anaconda Promt следующую команду:
 
 ```where python```
+
+![alt text](https://recruitlab.blob.core.windows.net/recruitlabblob/wherepythonconda.jpg)
+
 
 После этого в консоли отобразится путь до python.exe.
 Копируем его и возвращаемся в VS Code.
@@ -65,17 +70,22 @@ https://marketplace.visualstudio.com/items?itemName=ms-python.python
 
 Теперь нам нужно установить модули, необходимые для работы нашей программы. Названия этих модулей находятся в файле ```requirements.txt```
 В терминале Visual Studio Code мы запускаем:
+
 ```conda activate testvirtualenv```
 
+![alt_text](https://recruitlab.blob.core.windows.net/recruitlabblob/activateenvcode.jpg)
+
 ```pip install -r requirements.txt```
+
+![alt_text](https://recruitlab.blob.core.windows.net/recruitlabblob/codepipinstall.jpg)
 
 <br/>
 
 ##### Ключи для доступа к ресурсам:
 В этой лабораторной мы будем использовать эти ключи:
 
-```subscription_key ```
-```blobAccountKey ```
+```subscription_key: "ae56704bd8a7489dbbfa2f6c583d5f87"```
+```blobAccountKey: 'UtsH7wJC1dGPqIKwuzbtLHhFOwWfLCdxJT2jmj8vFDbMiXIOTlG5GLVA5l4sJl12Vou++aPWy4LikoIRD+rVvw=='```
 
 
 ![alt text](https://recruitlab.blob.core.windows.net/recruitlabblob/keys%20correct.JPG)
@@ -95,6 +105,8 @@ https://marketplace.visualstudio.com/items?itemName=ms-python.python
 Далее для правильной работы приложения, необходимо добавить картинку продукта, который вы хотите купить. Находим его в google, жмем copy link location и вставляем в терминал. 
 **Убедитесь, что ссылка заканчивается на .jpg или другое разрешение изображений**
 Если вы не хотите решать мы подготовили для вас ссылку:
+
+```https://i.livelib.ru/boocover/1000117421/200/a0de/Vladimir_Levi__Lekarstvo_ot_leni.jpg```
 
 При удачном добавлении лица, вы увидите ID вашего лица.
 
