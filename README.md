@@ -84,7 +84,7 @@ https://marketplace.visualstudio.com/items?itemName=ms-python.python
 ##### Ключи для доступа к ресурсам:
 В этой лабораторной мы будем использовать эти ключи:
 
-```subscription_key: "ae56704bd8a7489dbbfa2f6c583d5f87"```
+```subscription_key: "945b23477b534e17afe04a496a43ecb9"```
 
 ```blobAccountKey: 'UtsH7wJC1dGPqIKwuzbtLHhFOwWfLCdxJT2jmj8vFDbMiXIOTlG5GLVA5l4sJl12Vou++aPWy4LikoIRD+rVvw=='```
 
