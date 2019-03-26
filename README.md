@@ -1,95 +1,64 @@
-# faceAPI-lab: Персонализированный рекламный контент
+# Personal Marketing build on Azure Face API
 
-Перед началом лабораторной работы, вам нужно склонировать этот репозиторий себе на компьютер. Для этого нажмите кнопку **Clone or Download** и скачайте zip файл.
-Распакуйте файл в удобное вам место.
+Before start, you need to clone this repo either by downloading zip file or cloning with git.
 
-## Установка Python 3.7 и подготовка virtual environment
-##### Скачиваем miniconda:
+You will also need **Python 3.7**, **Anaconda** and **Azure Subscription** to run this example.
 
-Для установки Python и нужных нам модулей удобно использовать package manager. Самый популярный среди них - Anaconda.
-Мы будем использовать упрощенную и бесплатную версию - Miniconda.
-Нам нужно скачать его под Python 3.7, по этой ссылке: 
+## Installing Python 3.7 and setting up virtual environment 
+##### Downloading miniconda:
+
+To download miniconda go here and grab 3.7 installation package:
 
 https://docs.conda.io/en/latest/miniconda.html
 
-Далее следуем по пути установки и **не забываем добавить Minconda в PATH**:
-![alt text](https://cdn-images-1.medium.com/max/1412/1*7a9zVyGP3iMXu9aB4e_Vhw.png)
+After the installation is completed run Anaconda Promt as administrator.
+First, we need to setup virtual environment, which we will use to install packages for python required for this app to work.
 
-После завершения установки, находим папку **Anaconda3** через пуск и запускаем **Anaconda Promt** в режиме администратора.
-
-Первое, что нам нужно сделать это создать virtual environment (виртуальную среду). В эту среду мы будем устанавливать все необходимые библиотеки.
-
-> Для удобной работы с модулями Python, всегда рекомендуется создавать отдельные virtual environmet-ы. Они могут содержать разные версии модулей, или самого Python
-
-Для этого запускаем в консоли команду:
+To do that, run:
 
 ```conda create -n testvirtualenv Python=3.7```
 
+Press *y* to install required packages. 
 <br/>
 
-##### Скачиваем Visual Studio Code:
-Теперь нам надо скачать нашу IDE. В этой лабораторной будем использовать бесплатную VS Code:
+##### (Optional) Installing Visual Studio Code:
+You will also need andIDE or code editor (like Sublime) to change variable values.
+In this example we use VS Code (it's free), which you can grab here:
 
 https://code.visualstudio.com/
 
-После установки, нам нужно добавить Extension для работы с Python:
+Then, install Python Extension:
 
 https://marketplace.visualstudio.com/items?itemName=ms-python.python
 
 <br/>
 
-##### Добавляем проект в Visual Studio Code:
+##### Setting up the environment:
 
-Для этого нам нужно добавить папку. Жмем File и Add Folder to Workspace, затем выбираем папку, где вы сохранили репозиторий
-
-![alt text](https://recruitlab.blob.core.windows.net/recruitlabblob/add%20folder.jpg)
-<br/>
-
-##### Настройка проекта и подготовка библиотек:
-
-Вернемся в Anaconda Promt и запустим следующую команду, чтобы активировать наш virtual environment:
+Lets get back to Anaconda Promt to activate virtual environment:
 
 ```conda activate testvirtualenv```
 
-![alt text](https://recruitlab.blob.core.windows.net/recruitlabblob/activateenv.jpg)
+To install the required modules, we need to ```cd``` to the path of repository (which you either cloned or downloaded). Run 
 
-Далее, нам нужно найти путь к testvirtualenv. Таким образом, мы укажем visual studio code, в какой именно среде ему стоит работать.
-Запускаем в консоли Anaconda Promt следующую команду:
+```cd``` + your path to folder
 
-```where python```
-
-![alt text](https://recruitlab.blob.core.windows.net/recruitlabblob/wherepythonconda.jpg)
-
-
-После этого в консоли отобразится путь до python.exe.
-Копируем его и возвращаемся в VS Code.
-Находим файл ```settings.json``` внутри ```.vscode``` и заменяем его на наш путь из консоли. 
-Одинарный слэш меняем везде на двойной:
-
-![alt text](https://recruitlab.blob.core.windows.net/recruitlabblob/where_python.JPG)
-
-Теперь нам нужно установить модули, необходимые для работы нашей программы. Названия этих модулей находятся в файле ```requirements.txt```
-В терминале Visual Studio Code мы запускаем:
-
-```conda activate testvirtualenv```
-
-![alt_text](https://recruitlab.blob.core.windows.net/recruitlabblob/activateenvcode.jpg)
+Then run:
 
 ```pip install -r requirements.txt```
 
-![alt_text](https://recruitlab.blob.core.windows.net/recruitlabblob/codepipinstall.jpg)
+This will install required modules.
 
 <br/>
 
-##### Ключи для доступа к ресурсам:
-В этой лабораторной мы будем использовать эти ключи:
+##### Setting up Face API and Blob Storage:
+Now we will need to setup our Services in Azure.
+Face API will handle the matching between users and adverts, and blob storage will store advertising data.
 
 ```subscription_key: "#"```
 
 ```blobAccountKey: '#'```
 
-
-![alt text](https://recruitlab.blob.core.windows.net/recruitlabblob/keys%20correct.JPG)
 
 Переходим в файл key.py и изменяем поля на значения выше, **оставляя кавычки** 
 
