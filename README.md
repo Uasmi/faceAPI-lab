@@ -55,30 +55,19 @@ This will install required modules.
 Now we will need to setup our Services in Azure.
 Face API will handle the matching between users and adverts, and blob storage will store advertising data.
 
+For access to the Face API you will need to add the subscription key to the **key.py** keeping the quotes.
 ```subscription_key: "#"```
 
+And for the blob storage you need to enter the blobAccount key to the **key.py** keeping the quotes as well.
 ```blobAccountKey: '#'```
 
-
-Переходим в файл key.py и изменяем поля на значения выше, **оставляя кавычки** 
-
-
-##### Первый запуск приложения:
-Для того чтобы запустить приложение, нужно удостовериться, что ваша вебкамера не заклеена.
-Для запуска приложения достаточно нажать F5 в VS Code.
-
-Вам будет предложено добавить свое лицо в библиотеку лиц. Для этого нужно нажать *y*
-
-![alt text](https://recruitlab.blob.core.windows.net/recruitlabblob/question_1.JPG)
+# First run 
+For the first run you need to make sure that your Web Cam is accessible. Jump to anaconda and run 
+``python main.py``
 
 
-Далее для правильной работы приложения, необходимо добавить картинку продукта, который вы хотите купить. Находим его в google, жмем copy link location и вставляем в терминал. 
-**Убедитесь, что ссылка заканчивается на .jpg или другое разрешение изображений**
-Если вы не хотите решать мы подготовили для вас ссылку:
 
-```https://i.livelib.ru/boocover/1000117421/200/a0de/Vladimir_Levi__Lekarstvo_ot_leni.jpg```
 
-При удачном добавлении лица, вы увидите ID вашего лица.
 
 
 
